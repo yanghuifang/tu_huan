@@ -1,0 +1,331 @@
+/*
+* @Author: 11911
+* @Date:   2018-08-30 09:52:22
+* @Last Modified by:   11911
+* @Last Modified time: 2018-09-01 14:32:42
+*/
+.banner1{
+	width: 100%;
+	height: 500px;
+	background-image: url('../img/beach-bora-bora-flow-21787.jpg');
+	background-repeat: no-repeat;
+	background-size:100%;
+	background-attachment: fixed;
+	
+
+}
+.banner1 .ban-box{
+	padding-top: 40px;
+	padding-right: 20px;
+	text-align: center;
+}
+.banner1 .ban-box h2{
+	color: #fff;
+	font-size: 26px;
+
+}
+.banner1 .ban-box p{
+	color: #fff;
+	font-size: 18px;
+	padding-top: 20px;
+}
+.banner1 .ban-box p span{
+	padding:0 20px;
+}
+.banner1 .share{
+	width: 100px;
+	height: 50px;
+	background: #008489;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.banner1 .share a{
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+}
+.title .title-text{
+	padding:15px 0 ;
+	display: flex;
+	justify-content: space-between;
+}
+.title .title-text h3{
+	color: #2f2f2f;
+}
+.title .title-text a{
+	color: #2f2f2f;
+	font-size: 16px;
+	line-height: 60px;
+	text-decoration: none;
+}
+/* 故事集 */
+.story{
+	width: 100%;
+}
+.story ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.story ul li{
+	width:60%; 
+	height: 180px;
+	margin-right: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	color: #fff;
+	display: flex;
+	flex-direction: column-reverse;
+	cursor: pointer;
+}
+
+.story ul .list1{
+
+	background-image: url('../img/94acb035-16aa-4df5-99f7-a84dd5959e04.jpg');
+	background-repeat: no-repeat;
+	background-size:100%;
+	/* opacity: 0.7; */
+}
+.story ul .list2{
+	background-image: url('../img/46d287d4-01ca-4dec-8e09-0cb3b602877d.jpg');
+	background-repeat: no-repeat;
+	background-size:100%;
+	/* opacity: 0.7; */
+
+}
+.story ul .list3{
+	background-image: url('../img/a7411c22-c7c5-416d-af47-ecc542989c0b.jpg');
+	background-repeat: no-repeat;
+	background-size:100%;
+	/* opacity: 0.7; */
+
+}
+.story ul li .li-box{
+	width: 60px;
+	height: 26px;
+	background: #fff;
+	color: #2f2f2f;
+	text-align: center;
+	line-height: 26px;
+	border-radius: 5px;
+	font-weight: 300;
+} 
+.story ul li .li-text{
+	width: 60%;
+}
+.story ul li .li-text h2{
+	font-size: 24px;
+}
+.select{
+	width: 100%;
+}
+.select ul{
+	width: 100%;
+}
+.select ul li{
+	margin-bottom: 10px;
+	border-radius: 15px;
+	cursor: pointer;
+	
+}
+.select ul li:hover{
+	transform: translate(0, -4px);
+	transition: all .5s;
+}
+.select ul li .se-pic{
+	position: relative;
+}
+.select ul li .se-pic img{
+	width: 100%;
+	border-radius: 15px;
+}
+.select ul li .se-text{
+	display: flex;
+	padding: 5px 0 0 10px;
+	font-size: 16px;
+}
+.select ul li .se-text span{
+	font-weight: 800;
+	margin-right: 8px;
+	font-size: 16px;
+}
+.select ul li .se-text span i{
+	font-weight: 500;
+}
+.select ul li .se-head{
+	padding: 0 0 10px 10px;
+	display: flex;
+	align-items: center;
+}
+.select ul li .se-head .se-head-pic{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: blue;
+}
+.select ul li .se-head .se-head-pic img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.select ul li .se-head .se-head-good{
+	padding: 0 20px;
+}
+.select ul li .se-head .se-head-good img{
+	width: 30px;
+	height: 30px;
+}
+.select ul li .se-head .se-head-talk img{
+	width: 30px;
+	height: 30px;
+}
+.select ul li .se-pic .se-food{
+	width: 50px;
+	height: 30px;
+	border-radius: 8px;
+	background: #fff;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	text-align: center;
+	line-height: 30px;
+
+}
+.se-more{
+	width: 160px;
+	height: 60px;
+	border: 2px solid #2f2f2f;
+	text-align: center;
+	line-height: 60px;
+	margin: 0 auto;
+	font-size: 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-bottom: 50px;
+}
+/* 登录注册 */
+.login{
+	width: 100%;
+	height: 100%;
+
+}
+.login .black{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	display: none;
+}
+.login .login-box{
+	width: 50%;
+	height: 70%;
+	border-radius: 10px;
+	background: #fff;
+	padding: 30px 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 990;
+	display: none;
+}
+.login .login-box .login-text1{
+	font-size: 26px;
+	text-align: center;
+}
+.login .login-box .login-text2{
+	padding: 10px 0;
+	font-size: 16px;
+	text-align: center;
+}
+.login .login-box .input-hei{
+	height: 50px;
+}
+.login .login-box label{
+	line-height: 30px;
+	font-size: 14px;
+}
+.login .login-box .remenber{
+	width: 20px;
+	height: 20px;
+}
+.login .login-box .checkbox{
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+
+}
+.login .login-box .phone a{
+	padding:  0 4px;
+	font-size: 14px;
+
+}
+.login .login-box .phone .phone-i{
+	border-right: 1px solid #2f2f2f;
+}
+.login .logining{
+	width: 100%;
+	height: 40px;
+	background: #008489;
+	text-align: center;
+	line-height: 40px;
+	opacity: 0.8;
+	color: #fff;
+	border-radius: 8px;
+}
+.login .close{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	font-size: 50px;
+	text-align: center;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+
+
+@media screen and (min-width: 768px){
+.banner1 .ban-box{
+	padding-top: 80px;
+	
+}
+.banner1 .ban-box h2{
+	color: #fff;
+	font-size: 32px;
+}
+
+}
+
+/* 普通pc端：中等屏幕 col-md- >992 */
+@media screen and (min-width: 992px){
+	.story ul{
+		display: flex;
+		flex-direction: row;
+	}
+	.story ul li{
+		width:35%; 
+		height: 140px;
+		margin-right: 10px;
+		border-radius: 10px;
+	}
+	.story ul li:nth-child(3){
+		margin-right: 0;
+	}
+}
+/* 大屏幕 ：*/
+@media screen and (min-width: 1200px){
+
+}

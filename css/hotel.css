@@ -1,0 +1,374 @@
+/*
+* @Author: 11911
+* @Date:   2018-08-28 15:15:00
+* @Last Modified by:   11911
+* @Last Modified time: 2018-09-01 15:15:01
+*/
+
+.banner{
+	width: 100%;
+	/* height: 1092px; */
+	background-image: url('../img/cabin-clouds-cold-950058.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+.banner .ban-text{
+	padding-left: 20px;
+}
+.banner .ban-text h3{
+	font-size: 20px;
+	color: #fff;
+	font-style: normal;
+}
+.banner .search{
+	padding-left: 20px;
+	padding-top: 10px
+
+}
+.banner .search input{
+	width: 50%;
+	height: 30px;
+	border-radius:8px;
+	padding: 2px 10px;
+	border: 1px solid #fff;
+	color: #2f2f2f;
+	font-size: 14px;
+	float: left;
+}
+
+.banner .search input::-webkit-input-placeholder{
+	color: #696969;
+	font-size: 14px;
+}
+
+.banner .search .sea-box{
+	width: 40px;
+	height: 30px;
+	border-radius: 5px;
+	background-color:#2f2f2f;
+	float: left;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.banner .search .sea-box img{
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+.banner ul{
+	display: block;
+	padding: 50px 0 0 14px;
+	margin-bottom: 100px;
+
+}
+.banner ul li{
+	padding: 0 6px;
+	float: left;
+}
+.banner ul li a{
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+.banner ul li a:hover{
+	color: #008489;
+}
+
+/*  标题*/
+.title{
+	width: 100%;
+	background-color: #f4f4f4;
+	/* margin-top: 15px; */
+	
+}
+.title .title-text{
+	padding:15px 0 ;
+	display: flex;
+	justify-content: space-between;
+}
+.title .title-text h3{
+	color: #2f2f2f;
+	font-style: normal;
+}
+.title .title-text a{
+	color: #2f2f2f;
+	font-size: 16px;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+/* 旅游城市 */
+.city{
+	width: 100%;
+	padding: 10px;
+	background-color: #f4f4f4;
+}
+.city ul{
+	width: 100%;
+	height: 30px;
+	border-bottom:1px solid #848484; 
+}
+.city ul li{
+	height: 100%;
+	padding: 0 6px;
+	float: left;
+}
+.city ul .city-list{
+	border-bottom: 1px solid #008489;
+}
+.city ul li a{
+	color: #2f2f2f;
+	font-size: 16px;
+	text-decoration: none;
+}
+.city ul li a:hover{
+	color: #008489;
+}
+/* 房源 */
+.list{
+/* 	width: 100%; */
+	/* padding-top: 20px; */
+	background: #f4f4f4;
+}
+.list ul li .white{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: calc(100% - 30px);
+	height: 0;
+	color: #fff;
+	font-size:18px;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.list ul li:hover .white{
+	height: 100%;
+	border-radius: 10px;
+}
+.list ul li{
+	background-color: #f4f4f4;
+	cursor: pointer;
+	margin-bottom: 10px;
+	
+}
+.list ul li:hover{
+	transform: translate(0, -3px);
+	transition: all .4s;
+}
+.list ul li .list-pic img{
+	width: 100%;
+	border-radius: 10px;
+
+}
+.list ul li .list-text{
+	padding: 0 4px;
+}
+.list ul li .list-text h3{
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #2f2f2f;
+}
+.list ul li .list-text p{
+	font-size: 16px;
+	color: #848484;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.list .list-more{
+	width: 120px;
+	height: 60px;
+	color: #fff;
+	background: #2f2f2f;
+	border-radius: 10px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	cursor: pointer;
+}
+/* 跟着电影去旅行 */
+.movie{
+	width: 100%;
+	background: #f4f4f4;
+	padding-top: 60px;
+}
+.movie .movie-box{
+	width: 100%;
+	/* height: 160px; */
+	border: 1px solid #2f2f2f;
+	border-left: 4px solid #008489;
+	padding: 10px;
+}
+.movie .movie-box p{
+	font-size: 16px;
+	color: #848484;
+}
+/* 电影 */
+.film{
+	width: 100%;
+	background: #f4f4f4;
+	padding-top: 30px;
+}
+.film ul li{
+	position: relative;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.film ul li .film-pic img:hover{
+	box-shadow:0 0 15px 2px rgba(0, 0, 0, 0.5);
+}
+.film ul li .film-pic img{
+	width: 100%;
+}
+.film ul li .film-text{
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	color: #fff;
+}
+.film ul li .film-text h5{
+	font-size: 26px;
+}
+.film ul li .film-text h6{
+	font-size: 22px;
+}
+/* 精品酒店 */
+.abroad{
+	width: 100%;
+	background: #f4f4f4;
+	padding-top: 20px;
+}
+.abroad .ab-text{
+	border-bottom: 1px solid #848484;
+}
+.abroad .ab-text h3{
+	font-size: 20px;
+	color: #2f2f2f;
+}
+/* 国家 */
+.countrl{
+	width: 100%;
+	background-color: #f4f4f4;
+}
+.countrl .countrl-text{
+	padding-top: 20px;
+}
+.countrl .countrl-text a{
+	display: block;
+	padding: 20px;
+	font-size: 14px;
+	color: #848484;
+	/* margin-right: 30px; */
+	float: left;
+	text-decoration: none;
+	cursor: pointer;
+}
+.countrl .countrl-text a:hover{
+	color: #008489;
+}
+
+.bottom{
+    width: 100%;
+    background: #2f2f2f;
+}
+.bottom ul .list1{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom ul .list1 a{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.bottom ul .list2{
+	color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px){
+.banner .ban-text{
+	padding: 40px 0 30px 60px;
+}
+.banner .ban-text h3{
+	font-size: 30px;
+	color: #fff;
+	font-style: normal;
+}
+.banner .search {
+	padding: 0 0 30px 60px;
+
+}
+.banner .search input{
+	width: 50%;
+	height: 60px;
+	border-radius:10px;
+	padding: 2px 10px;
+	border: 1px solid #fff;
+	color: #2f2f2f;
+	font-size: 20px;
+	float: left;
+}
+.banner .search input::-webkit-input-placeholder{
+	color: #696969;
+	font-size: 20px;
+}
+
+.banner .search .sea-box{
+	width: 80px;
+	height: 60px;
+	border-radius: 10px;
+	float: left;
+	margin-left: 10px;
+}
+.banner .search .sea-box img{
+	width: 50px;
+	height: 50px;
+	display: block;
+}
+.banner ul{
+	padding: 80px 0 0 60px;
+	margin-bottom: 200px;
+	
+}
+.banner ul li{
+	
+	padding: 0 8px;
+	float: left;
+}
+.banner ul li a{
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+}
+}
+/* 普通pc端：中等屏幕 col-md- >992 */
+@media screen and (min-width: 992px){
+	.film ul li .film-text h5{
+	font-size: 16px;
+}
+.film ul li .film-text h6{
+	font-size: 14px;
+}
+}
+/* 大屏幕 ：*/
+@media screen and (min-width: 1200px){
+
+}

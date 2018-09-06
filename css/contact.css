@@ -1,0 +1,54 @@
+/*
+* @Author: 11911
+* @Date:   2018-08-29 16:19:54
+* @Last Modified by:   11911
+* @Last Modified time: 2018-08-29 17:07:24
+*/
+main{
+	width: 100%;
+	margin-top: 20px;
+}
+main .contact{
+	width: 100%;
+	padding: 20px;
+	background:#f4f4f4;
+	border-radius: 10px;
+	color:#2f2f2f;
+}
+main .contact h4{
+	font-weight: bold;
+}
+main .left{
+	margin-top: 20px;
+	background:#f4f4f4;
+	border-radius: 10px;
+	color:#2f2f2f;
+	margin-bottom: 20px;
+}
+main .left h4{
+	display: block;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	background: #2f2f2f;
+	color: #fff;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+main .left p{
+	line-height: 20px;
+}
+
+
+@media screen and (min-width: 768px){
+	
+}
+/* 普通pc端：中等屏幕 col-md- >992 */
+@media screen and (min-width: 992px){
+	
+}
+/* 大屏幕 ：*/
+@media screen and (min-width: 1200px){
+
+}
