@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/login.css">
     <script src="css/login.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
 	 <div class="top">
@@ -32,6 +33,14 @@
                 <div class="list">
                     <div class="list-pic">
                         <img src="img/list.png" alt="">
+                        <div class="list-1">
+                            <a href="index.html" class="bor">首页</a>
+                            <a href="line.html">线路推荐</a>
+                            <a href="hotel.html">民宿推荐</a>
+                            <a href="history.html">旅游故事</a>
+                            <a href="cantact us.html">联系我们</a>
+                            <a href="join us.html">加入我们</a>
+                        </div>
                     </div>
                     <a href="index.html" >首页</a>
                     <a href="line.html">线路推荐</a>
@@ -165,3 +174,8 @@
     </div>
 </body>
 </html>
+<script>
+    let lists=document.querySelector("nav .con .list-pic");
+    let lis1=document.querySelector("nav .con .list-pic .list-1");
+    title_list(lists,lis1);
+</script>

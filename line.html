@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/first.css">
     <link rel="stylesheet" href="css/login.css">
     <script src="css/login.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/opacity.js"></script>
 </head>
 <body>
 	<div class="top">
@@ -31,6 +33,14 @@
                 <div class="list">
                     <div class="list-pic">
                         <img src="img/list.png" alt="">
+                        <div class="list-1">
+                            <a href="index.html" class="bor">首页</a>
+                            <a href="line.html">线路推荐</a>
+                            <a href="hotel.html">民宿推荐</a>
+                            <a href="history.html">旅游故事</a>
+                            <a href="cantact us.html">联系我们</a>
+                            <a href="join us.html">加入我们</a>
+                        </div>
                     </div>
                     <a href="index.html">首页</a>
                     <a href="" class="bor">线路推荐</a>
@@ -65,20 +75,20 @@
     <main>
         <div class="container">
             <div class="view">
-                <div class="text-left">
+                <div class="text-left left3">
                     <h3>行程安排</h3>
                     <span>北京——哈巴罗夫斯克——彼得罗巴普洛夫斯克——库夜湖保护区——贝斯特亚河——穆特诺斯夫斯克火山</span>
                 </div>
-                <div class="text-pic1">
+                <div class="text-pic1 left4">
                     <img src="img/adventure-baltic-sea-car-21014.jpg" alt="">
                 </div>
             </div>
             <div class="view1">
-                <div class="text-right">
+                <div class="text-right right3">
                     <h3>这里拥有</h3>
                     <span>近200座火山分布在一千多公里长的狭长半岛上，其中29座常年活跃，每到夏秋交替之际，无数的鱼洄游至这里产卵，无数的棕熊也赶来这里享受盛宴</span>
                 </div>
-                <div class="text-pic2">
+                <div class="text-pic2 right4">
                     <img src="img/animal-animal-photography-bear-158109.jpg" alt="">
                 </div>
             </div>
@@ -97,16 +107,16 @@
     <main>
         <div class="container">
             <div class="view">
-                <div class="text-left">
+                <div class="text-left left1">
                     <h3>行程安排</h3>
                     <span>北京——抵达清迈——大象保育园——夜间动物园——塔佩门——大塔寺</span>
                 </div>
-                <div class="text-pic1">
+                <div class="text-pic1 left2">
                     <img src="img/adventure-baltic-sea-car-21014.jpg" alt="">
                 </div>
             </div>
             <div class="view1">
-                <div class="text-right">
+                <div class="text-right right1">
                     <h3>你可以在这里</h3>
                     <span>大象保育园象夫体验，全家人分工照顾象宝宝
 博物、民俗体验，全家人一起逛菜市场用英泰双语买菜、辨识泰国香料、一起下厨学泰餐，那一夜，熊孩子喊爸爸妈妈，回家吃饭啦
@@ -114,7 +124,7 @@
 一起逛本地市集，家长和孩子互相为对方挑选礼物
 本地僧侣小学探访，寺庙英语角，和小和尚们英文交流、互换礼物、并教对方写汉语名字</span>
                 </div>
-                <div class="text-pic2">
+                <div class="text-pic2 right2">
                     <img src="img/architecture-asia-attraction-219012.jpg" alt="">
                 </div>
             </div>
@@ -208,3 +218,43 @@
     </div>
 </body>
 </html>
+<script>
+    let lists=document.querySelector("nav .con .list-pic");
+    let lis1=document.querySelector("nav .con .list-pic .list-1");
+    title_list(lists,lis1);
+
+
+
+    // let text1=document.querySelector("main .view .left3");
+    // let pic1=document.querySelector("main .view .left4");
+    // let text2=document.querySelector("main .view1 .right3");
+    // let pic2=document.querySelector("main .view1 .right4");
+    // console.log(pic1);
+    // arr.forEach=function(value,index){
+    //     window.onscroll=function () {
+    //         let wh=window.innerHeight;
+    //         let bh=document.documentElement.scrollTop;
+    //         if(bh+wh>value+200){
+    //
+    //             text1[index].style.opacity="1";
+    //             pic1[index].style.opacity="1";
+    //         }
+    //         if(bh+wh>value+200){
+    //             text2[index].style.opacity="1";
+    //             pic2[index].style.opacity="1";
+    //         }
+    //
+    //     }
+    // }
+
+    // let text3=document.querySelector("main .view .left1");
+    // let pic3=document.querySelector("main .view .left2");
+    // let text4=document.querySelector("main .view1 .right1");
+    // let pic4=document.querySelector("main .view1 .right2");
+    // console.log(pic3);
+    //
+    // op_pic(text3,pic3,text4,pic4,2200,2500);
+    // op_pic(text1,pic1,text2,pic2,1100,1300);
+
+
+</script>

@@ -18,10 +18,18 @@ i{
 }
 
 .top{
-    display: none;
+    display: block;
+    width:100%;
+    height: 40px;
+    background:#2f2f2f;
 }
 .top ul li{
-    display: none;
+    display: block;
+    padding: 0 10px;
+    font-size:12px;
+    line-height: 40px;
+    color:#dfa474;
+    float: left;
 }
 
 
@@ -54,36 +62,64 @@ nav .con .list a{
     display: none;
 }
 /* 小屏下列表 */
+nav .con .list .list-pic{
+    position: relative;
+}
 nav .con .list .list-pic img{
     width: 50px;
     height: 50px;
 }
+nav .con .list .list-pic .list-1{
+    /*width: 300px;*/
+    /*height: 200px;*/
+    padding:20px 30px;
+    background: #fff;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    top:50px;
+    left:-100px;
+    z-index: 999;
+    display: none;
+}
+nav .con .list .list-pic .list-1 a{
+    padding:10px 0;
+    color: #008489;
+    font-size: 22px;
+    display: block;
+    text-decoration: none;
+}
 /* 图片 */
 .banner{
     width: 100%;
-    margin-top:5px;
+    /*margin-top:5px;*/
     position: relative;
 }
 .banner img{
     width: 100%;
 }
 .banner .ban-text{
+    width: 300px;
+    height: 150px;
 	text-align: center;
 	position: absolute;
-	top: 20%;
-	left: 10%;
+	top: 0;
+    bottom:0;
+    right: 0;
+	left: 0;
+    margin:auto;
 	color: #fff;
 }
 .banner .ban-text h4{
-	font-size: 32px;
-	line-height: 80px;
-}
-.banner .ban-text p{
-	font-size: 18px;
+	font-size: 26px;
 	line-height: 40px;
 }
+.banner .ban-text p{
+	font-size: 14px;
+	line-height: 20px;
+}
 .banner .ban-text span{
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 40px;
 }
 /* 欧洲大陆的“失落孤岛”  标题*/
@@ -129,6 +165,8 @@ main .view .text-left{
     flex-direction: column;
     align-items: center;
     color: #fff;
+    /*opacity: 0;*/
+    /*transition: all 1s;*/
 }
 main .view .text-left:after{
     content: "";
@@ -149,6 +187,8 @@ main .view .text-left span{
 main .view .text-pic1{
     width: 70%;
     padding: 20px 0;
+    /*opacity: 0;*/
+    /*transition: all 1s;*/
 }
 main .view .text-pic1 img{
     width: 100%;
@@ -166,6 +206,8 @@ main .view1 .text-right{
     padding: 30px;
     text-align: center;
     color: #fff;
+    /*opacity: 0;*/
+    /*transition: all 1s;*/
 }
 main .view1 .text-right:after{
     content: "";
@@ -187,6 +229,8 @@ main .view1 .text-pic2{
     width: 70%;
     padding: 20px 0;
     margin: 0 auto;
+    /*opacity: 0;*/
+    /*transition: all 1s;*/
 }
 main .view1 .text-pic2 img{
     width: 100%;
@@ -216,20 +260,7 @@ main .view1 .text-pic2 img{
 }
 @media screen and (min-width: 768px){
     
-    .top{
-        display: block;
-        width:100%;
-        height: 30px;
-        background:#2f2f2f;
-    }
-    .top ul li{
-        display: block;
-        padding: 0 10px;
-        font-size:8px;
-        line-height: 30px;
-        color:#dfa474;
-        float: left;
-    }
+
     nav .con{
         display: block;
     }
@@ -314,10 +345,15 @@ main .view1 .text-pic2 img{
 /* 普通pc端：中等屏幕 col-md- >992 */
 @media screen and (min-width: 992px){
 .banner .ban-text{
+    width: 600px;
+    height: 300px;
 	text-align: center;
 	position: absolute;
-	top: 30%;
-	left: 20%;
+    top: 0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    margin:auto;
 	color: #fff;
 }
 .banner .ban-text h4{

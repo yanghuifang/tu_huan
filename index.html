@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
+    <script src="js/index.js"></script>
     <script src="css/login.js"></script>
     <script src="js/swiper-4.3.5.min.js "></script>
 </head>
@@ -34,6 +35,14 @@
                 <div class="list">
                     <div class="list-pic">
                         <img src="img/list.png" alt="">
+                        <div class="list-1">
+                            <a href="index.html" class="bor">首页</a>
+                            <a href="line.html">线路推荐</a>
+                            <a href="hotel.html">民宿推荐</a>
+                            <a href="history.html">旅游故事</a>
+                            <a href="cantact us.html">联系我们</a>
+                            <a href="join us.html">加入我们</a>
+                        </div>
                     </div>
                     <a href="index.html" class="bor">首页</a>
                     <a href="line.html">线路推荐</a>
@@ -236,3 +245,28 @@
     </script>
 </body>
 </html>
+<script>
+    let lists=document.querySelector("nav .con .list-pic");
+    let lis1=document.querySelector("nav .con .list-pic .list-1");
+    title_list(lists,lis1);
+    //图片出现
+    let text1=document.querySelector("main .view .text-left");
+    let pic1=document.querySelector("main .view .text-pic1");
+    let text2=document.querySelector("main .view1 .text-right");
+    let pic2=document.querySelector("main .view1 .text-pic2");
+    //let arr=[];//每个楼层距顶部的距离
+
+    window.onscroll=function () {
+        let wh=window.innerHeight;
+        let bh=document.documentElement.scrollTop;
+        if(bh+wh>1100){
+            text1.style.opacity="1";
+            pic1.style.opacity="1";
+        }
+        if(bh+wh>1400){
+            text2.style.opacity="1";
+            pic2.style.opacity="1";
+        }
+
+    }
+</script>
