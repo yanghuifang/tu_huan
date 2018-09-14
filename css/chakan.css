@@ -1,0 +1,93 @@
+.title{
+    width: 100%;
+    padding:20px 0;
+    text-align: center;
+}
+
+/* 故事集 */
+.story{
+    width: 100%;
+}
+.story ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.story ul li{
+    width:60%;
+    /*height: 180px;*/
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+    /*display: flex;*/
+    /*flex-direction: column-reverse;*/
+    cursor: pointer;
+    position: relative;
+}
+
+.story ul li img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.story ul li .li-box{
+    width: 60px;
+    height: 26px;
+    background: #fff;
+    color: #2f2f2f;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 5px;
+    font-weight: 300;
+}
+.story ul li .li-text{
+    width: 60%;
+    position: absolute;
+    bottom:10px;
+    left:20px;
+}
+.story ul li .li-text h2{
+    font-size: 24px;
+}
+.story .zhe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+
+@media screen and (min-width: 768px){
+
+
+}
+
+/* 普通pc端：中等屏幕 col-md- >992 */
+@media screen and (min-width: 992px){
+    .title{
+        text-align: left;
+    }
+    .story ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .story ul li{
+        width:32%;
+        /*height: 140px;*/
+        margin-right: 15px;
+        border-radius: 10px;
+        matgin-bottm:15px;
+    }
+    .story ul li:nth-child(3){
+        /*margin-right: 0;*/
+    }
+}
+/* 大屏幕 ：*/
+@media screen and (min-width: 1200px){
+
+}
