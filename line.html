@@ -10,6 +10,7 @@
     <script src="css/login.js"></script>
     <script src="js/index.js"></script>
     <script src="js/opacity.js"></script>
+    <script src="js/jquery%203.3.1.js"></script>
 </head>
 <body>
 	<div class="top">
@@ -106,7 +107,7 @@
     </div>
     <main>
         <div class="container">
-            <div class="view">
+            <div class="view li1">
                 <div class="text-left left1">
                     <h3>行程安排</h3>
                     <span>北京——抵达清迈——大象保育园——夜间动物园——塔佩门——大塔寺</span>
@@ -115,7 +116,7 @@
                     <img src="img/adventure-baltic-sea-car-21014.jpg" alt="">
                 </div>
             </div>
-            <div class="view1">
+            <div class="view1 li2">
                 <div class="text-right right1">
                     <h3>你可以在这里</h3>
                     <span>大象保育园象夫体验，全家人分工照顾象宝宝
@@ -225,26 +226,47 @@
 
 
 
-    // let text1=document.querySelector("main .view .left3");
-    // let pic1=document.querySelector("main .view .left4");
-    // let text2=document.querySelector("main .view1 .right3");
-    // let pic2=document.querySelector("main .view1 .right4");
-    // console.log(pic1);
-    // arr.forEach=function(value,index){
-    //     window.onscroll=function () {
-    //         let wh=window.innerHeight;
-    //         let bh=document.documentElement.scrollTop;
-    //         if(bh+wh>value+200){
+    let text1=$("main .view .left3");
+    let pic1=$("main .view .left4");
+    let text2=$("main .view1 .right3");
+    let pic2=$("main .view1 .right4");
+    console.log(text1,pic1,text2,pic2);
+    let text3=$("main .view .left1");
+    let pic3=$("main .view .left2");
+    let text4=$("main .view1 .right1");
+    let pic4=$("main .view1 .right2");
+
+        window.onscroll=function () {
+            let wh=window.innerHeight;
+            let bh=document.documentElement.scrollTop;
+            if(bh+wh>1200){
+
+                text1.css("opacity","1");
+                pic1.css("opacity","1");
+            }
+            if(bh+wh>1500){
+                text2.css("opacity","1");
+                pic2.css("opacity","1");
+            }
+            if(bh+wh>2300){
+
+                text3.css("opacity","1");
+                pic3.css("opacity","1");
+            }
+            if(bh+wh>2500){
+                text4.css("opacity","1");
+                pic4.css("opacity","1");
+            }
+
+        }
+
+
+
+    // window.onscroll=function () {
+    //     let wh=window.innerHeight;
+    //     let bh=document.documentElement.scrollTop;
     //
-    //             text1[index].style.opacity="1";
-    //             pic1[index].style.opacity="1";
-    //         }
-    //         if(bh+wh>value+200){
-    //             text2[index].style.opacity="1";
-    //             pic2[index].style.opacity="1";
-    //         }
     //
-    //     }
     // }
 
     // let text3=document.querySelector("main .view .left1");
