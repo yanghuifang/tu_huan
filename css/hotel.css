@@ -7,12 +7,12 @@
 
 .banner{
 	width: 100%;
-	/* height: 1092px; */
+	 height: 300px;
 	background-image: url('../img/cabin-clouds-cold-950058.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 
 }
 .banner .ban-text{
@@ -308,6 +308,16 @@
 }
 
 @media screen and (min-width: 768px){
+	.banner{
+		width: 100%;
+		height: 500px;
+		background-image: url('../img/cabin-clouds-cold-950058.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		/*background-attachment: fixed;*/
+
+	}
 .banner .ban-text{
 	padding: 40px 0 30px 60px;
 }
