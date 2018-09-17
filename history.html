@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/history.css">
 	<script src="css/login.js"></script>
 	<script src="js/index.js"></script>
+	<script src="js/jquery 3.3.1.js"></script>
 </head>
 <body>
 	<div class="top">
@@ -526,7 +527,9 @@
 </body>
 </html>
 <script>
-    let lists=document.querySelector("nav .con .list-pic");
-    let lis1=document.querySelector("nav .con .list-pic .list-1");
-    title_list(lists,lis1);
+    let lis1=$("nav .con .list-pic .list-1");
+    // title_list(lists,lis1);
+    $("nav .con .list-pic").click(function(){
+        lis1.slideToggle("fast");
+    })
 </script>
